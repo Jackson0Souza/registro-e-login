@@ -21,6 +21,9 @@ body {
     width: 320px;
     animation: slideUp 0.5s ease-in-out;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 @keyframes slideUp {
     from { transform: translateY(20px); opacity: 0; }
@@ -28,12 +31,13 @@ body {
 }
 input {
     display: block;
-    width: 100%;
+    width: 90%;
     padding: 12px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 8px;
     transition: 0.3s;
+    text-align: center;
 }
 input:focus {
     border-color: #764ba2;
@@ -41,7 +45,7 @@ input:focus {
     box-shadow: 0px 0px 5px rgba(118, 75, 162, 0.5);
 }
 button {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     background: #764ba2;
     color: white;
@@ -49,11 +53,7 @@ button {
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    transition: 0.3s;
-}
-button:hover {
-    background: #5a3b8c;
-}
+    transition: 0.3s;}
 a {
     color: #764ba2;
     text-decoration: none;
