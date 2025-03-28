@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/icone.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container" id="register-container">
+        <h2>Cadastro</h2>
+        <input type="text" id="fullname" placeholder="Nome Completo" required>
+        <input type="email" id="email" placeholder="E-mail" required>
+        <input type="password" id="password" placeholder="Senha" required>
+        <button onclick="register()">Registrar</button>
+        <p id="message"></p>
+        <p>Já tem uma conta? <a href="#" onclick="showLogin()">Faça login</a></p>
+    </div>
+
+    <div class="container" id="login-container" style="display: none;">
+        <span class="back-arrow" onclick="showRegister()">&#8592;</span>
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="E-mail" required>
+        <input type="password" id="login-password" placeholder="Senha" required>
+        <button onclick="login()">Login</button>
+        <p id="login-message"></p>
+    </div>
+
+
+    <script src="script/script.js"></script>
+</body>
+</html>
